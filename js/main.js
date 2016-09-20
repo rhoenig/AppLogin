@@ -1,8 +1,26 @@
+var app = {
+
+    showAlert: function (message, title) {
+		if (navigator.notification) {
+			navigator.notification.alert(message, null, title, 'OK');
+		} else {
+			alert(title ? (title + ": " + message) : message);
+		}
+	},
+	
+	initialize: function() {
+		
+	}
+};
+
+app.initialize();
+
 $("#login").click(function(){
-alert('click');
+app.showAlert("Clicked", "Error");
 var email=$("#email").val();
 var password=$("#password").val();
 var dataString="email="+email+"&password="+password+"&login=";
+app.showAlert(dataString, "Error");
 if($.trim(email).length>0 & $.trim(password).length>0)
 {
 $.ajax({
