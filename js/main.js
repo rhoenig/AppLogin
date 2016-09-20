@@ -1,4 +1,5 @@
 $("#login").click(function(){
+alert('click');
 var email=$("#email").val();
 var password=$("#password").val();
 var dataString="email="+email+"&password="+password+"&login=";

@@ -7,16 +7,16 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Employee Directory</name>
+    <name>New Login App</name>
 
     <description>
-        A simple employee directory application
+        A simple login app
     </description>
     
     <content src="login.html"/>
 
     <author href="http://coenraets.org" email="ccoenraets@gmail.com">
-        Christophe Coenraets
+        Robert Hoenig
     </author>
 
 </widget>
