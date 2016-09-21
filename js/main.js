@@ -16,11 +16,11 @@ var app = {
 app.initialize();
 
 $("#login").click(function(){
-app.showAlert("Clicked", "Error");
+alert("Clicked");
 var email=$("#email").val();
 var password=$("#password").val();
 var dataString="email="+email+"&password="+password+"&login=";
-app.showAlert(dataString, "Error");
+alert(dataString);
 if($.trim(email).length>0 & $.trim(password).length>0)
 {
 $.ajax({
